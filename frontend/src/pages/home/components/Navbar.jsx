@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import '../css/navbar.css';
+import Cursor from '../../../Cursor'
 
 function Navbar() {
     useEffect(() => {
@@ -25,22 +26,23 @@ function Navbar() {
 
     return (
         <>
-<div class="bars" id="nav-action">
-    <span class="bar"></span>
-</div>
+            <Cursor />
+            <div class="bars" id="nav-action">
+                <span class="bar"></span>
+            </div>
 
-<nav id="nav">
-    <ul>
-        <li class="shape-circle"><a href="#">Home</a></li>
-        <li class="shape-circle"><a href="#">About</a></li>
-        <li class="shape-circle"><a href="#">Services</a></li>
-        <li class="shape-circle"><a href="#">Portfolio</a></li>
-        <li class="shape-circle"><a href="#">Blog</a></li>
-        <li class="shape-circle"><a href="#">Team</a></li>
-        <li class="shape-circle"><a href="#">Contact</a></li>
-        <li class="shape-circle"><a href="#">Careers</a></li>
-    </ul>
-</nav>
+            <nav id="nav">
+                <ul>
+                    <li class="shape-circle"><a className='hover-target' href="#">Home</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">About</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Services</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Portfolio</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Blog</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Team</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Contact</a></li>
+                    <li class="shape-circle"><a className='hover-target' href="#">Careers</a></li>
+                </ul>
+            </nav>
 
         </>
     );
