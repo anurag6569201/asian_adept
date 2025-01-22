@@ -1,7 +1,8 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 function Footer() {
     return (
         <>
-            <div class="container">
+            <div class="container" style={{zIndex:'10',position:'sticky' ,background:'#ffffff',margin:'0',padding:'0',width:'100%',maxWidth:'100%',boxShadow:'0 0 40px 70px #fff'}}>
                 <footer class="py-5">
                     <div class="row">
                         <div class="col-6 col-md-2 mb-3">
@@ -50,7 +51,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
                         <p>&copy; 2024 Company, Inc. All rights reserved.</p>
                         <ul class="list-unstyled d-flex">
                             <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter" /></svg></a></li>

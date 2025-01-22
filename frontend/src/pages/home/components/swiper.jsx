@@ -27,8 +27,8 @@ export default function  Carousal() {
         effect={'cube'}
         grabCursor={true}
         cubeEffect={{
-          shadow: false,
-          slideShadows: false,
+          shadow: true,
+          slideShadows: true,
         }}
         pagination={true}
         autoplay={{

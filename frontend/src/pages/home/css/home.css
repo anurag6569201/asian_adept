@@ -10,7 +10,7 @@ body, html, #app {
   }
   
   #app {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 100vh;
@@ -134,9 +134,8 @@ body, html, #app {
   }
   .bdy_card_contain{
     position: absolute;
-    top: 0px;
+    top: 10vh;
     left: 50px;
-    rotate: -15deg;
   }
   /* Base template configurations */ 
   .bday-card {
@@ -157,10 +156,9 @@ body, html, #app {
     width: 400px;
     height: 400px;
     padding: var(--space-sm) var(--space-sm) var(--space-xlg);
-    background: white;
+    background: transparent;
     border-radius: 4px;
-    box-shadow: var(--space-xsm) var(--space-xsm) 15px rgba(0,0,0, .15);
-    transform: rotate(5deg) translate(20px, 45px);
+    transform: rotate(0deg) translate(20px, 45px);
   }
   
   .bday-pic img {

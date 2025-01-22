@@ -1,5 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/welcome.css";
+
+import welcome1 from '../images/welcome1.svg';
+
 import Testimonials from "./Testimonials";
 function WelcomeApp() {
     return (
@@ -14,6 +17,7 @@ function WelcomeApp() {
                                 <div style={{ "--r": "275deg" }} className="tile"></div>
                                 <div style={{ "--r": "190deg" }} className="tile"></div>
                                 <div style={{ "--r": "45deg" }} className="tile"></div>
+                                
                             </div>
                         </div>
                         <div className="col-md-7"  style={{display:'flex',alignItems:'center'}}>

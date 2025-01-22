@@ -1,5 +1,4 @@
 .welcome-app{
-	margin-top: 105vh;
 	background-color: rgb(255, 255, 255);
 	z-index: 10 !important;
 	position: sticky;
@@ -57,7 +56,7 @@ body > section {
 }
 /* These determine the scroll distance for change  */
 main > section {
-	height: 80vh;
+	height: 90vh;
 	z-index: -1;
 }
 
