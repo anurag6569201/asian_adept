@@ -27,7 +27,7 @@ function Testimonials() {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <div className="img-box">
-            <img src="/examples/images/clients/3.jpg" alt="Client" />
+            <img src="https://ntrepidcorp.com/wp-content/uploads/2016/06/team-1-400x400.jpg" alt="Client" />
           </div>
           <p className="testimonial">
             Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia...
@@ -48,7 +48,7 @@ function Testimonials() {
 
         <div className="carousel-item">
           <div className="img-box">
-            <img src="/examples/images/clients/1.jpg" alt="Client" />
+            <img src="https://static.vecteezy.com/system/resources/previews/041/469/104/non_2x/ai-generated-business-man-with-glasses-smiling-free-png.png" alt="Client" />
           </div>
           <p className="testimonial">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit...
@@ -69,7 +69,7 @@ function Testimonials() {
 
         <div className="carousel-item">
           <div className="img-box">
-            <img src="/examples/images/clients/2.jpg" alt="Client" />
+            <img src="https://th.bing.com/th/id/OIP.qg8WcvA3q7cXStP3n0rq5gHaHa?w=980&h=980&rs=1&pid=ImgDetMain" alt="Client" />
           </div>
           <p className="testimonial">
             Vestibulum quis quam ut magna consequat faucibus...

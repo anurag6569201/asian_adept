@@ -1,5 +1,5 @@
 .carousel {
-	width: 650px;
+	width: 750px;
 	margin: 0 auto;
 	z-index: 10;
 }
@@ -11,11 +11,12 @@
 	min-height: 340px;
 }
 .carousel .carousel-item a {
-	color: #eb7245;
+	color: #3939c7;
 }
 .carousel .img-box {
 	width: 145px;
 	height: 145px;
+	border: 2px solid #3939c7;
 	margin: 0 auto;
 	border-radius: 50%;
 }

@@ -19,7 +19,7 @@ import image4 from '../images/image4.png';
 
 import Cursor from '../../../Cursor'
 
-export default function Carousal() {
+export default function  Carousal() {
   return (
     <>
         <Cursor />
@@ -27,10 +27,8 @@ export default function Carousal() {
         effect={'cube'}
         grabCursor={true}
         cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
+          shadow: false,
+          slideShadows: false,
         }}
         pagination={true}
         autoplay={{

@@ -18,7 +18,7 @@ const SphereAnimation = () => {
             count: 150,
             minSize: 0.3,
             maxSize: .8,
-            gravity: 0.4
+            gravity: .04
         })
 
         const bg = bgRef.current
@@ -70,21 +70,15 @@ const SphereAnimation = () => {
                 <div className="hero">
                     <div className="bdy_card_contain">
                         <div class="bday-card">
-
                             <div class="bday-decor--container">
-
                                 <div class="bday-pic ">
                                     <Carousal/>
                                 </div>
-
-
                             </div>
-
                             <div class="bday-message bday-message--paper">
                                 <p>Ana, yet another year that we get to celebrate together! Hope you have a great day, and may your new age be full of health, love and laughter. Love you loads <br /> Camila</p>
-                                <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">📌</p>
+                                <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">🔖</p>
                             </div>
-
                         </div>
                     </div>
 
