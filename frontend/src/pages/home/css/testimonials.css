@@ -1,7 +1,7 @@
 .carousel {
 	width: 650px;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	z-index: 10;
 }
 .carousel .carousel-item {
 	color: #999;
@@ -63,18 +63,22 @@
 	margin-right: -2px;
 }
 .carousel .carousel-indicators {
-	bottom: 15px;
+	bottom: -15px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
-	width: 11px;
-	height: 11px;
-	margin: 1px 5px;
-	border-radius: 50%;
+	width: 11px !important;
+	height: 11px !important;
+	margin: 1px 5px !important;
+	border-radius: 50% !important;
 }
 .carousel-indicators li {	
-	background: #e2e2e2;
-	border: none;
+	background: #e2e2e2 !important;
+	border: none !important;
+	overflow: hidden !important;
 }
 .carousel-indicators li.active {		
-	background: #888;		
+	background: #888 !important;		
+}
+.carousel-indicators li::marker{
+	display: none !important;
 }

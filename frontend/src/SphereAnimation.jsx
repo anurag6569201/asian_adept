@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import { Spheres1Background } from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.5/build/backgrounds/spheres1.cdn.min.js'
 import './pages/home/css/home.css'
 import Carousal from './pages/home/components/swiper'
-
+import backMark from './pages/home/images/backMark.png'
+import backMark1 from './pages/home/images/image.png'
 
 const SphereAnimation = () => {
     const canvasRef = useRef(null)
@@ -88,8 +89,8 @@ const SphereAnimation = () => {
                     </div>
 
                     <div className='hero-content'> 
-                        <h1 className='hover-target' ref={headingRef} contentEditable data-heading="ASIAN">ASIAN</h1>
-                        <h2 className='hover-target'>ADEPT</h2>
+                        <h1 className='hover-target' style={{position:'relative',width:'fit-content'}} ref={headingRef} contentEditable data-heading="ASIAN">ASIAN <img style={{position:'absolute',top:'-60px',width:'170%',left:'-100px',zIndex:'-1000'}} src={backMark1} alt="" /></h1>
+                        <h2 className='hover-target'><span>ADEPT</span></h2>
                         <p>From weddings to corporate gatherings, Asian Adept crafts flawless events with creativity and precision. Let’s make your vision a reality!</p>
                     </div>
                 </div>

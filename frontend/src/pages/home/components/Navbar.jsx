@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '../css/navbar.css';
 import Cursor from '../../../Cursor'
+import TopLinks from './TopLinks';
 
 function Navbar() {
     useEffect(() => {
@@ -27,6 +28,7 @@ function Navbar() {
     return (
         <>
             <Cursor />
+            <TopLinks />
             <div class="bars" id="nav-action">
                 <span class="bar"></span>
             </div>

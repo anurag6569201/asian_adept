@@ -74,7 +74,7 @@ function WelcomeApp() {
                 <section className="section--two"></section>
                 <section className="section--three"></section>
                 <section className="section--four"></section>
-                <section className="section--five centered">
+                <section className="section--five" style={{zIndex:'10'}}>
                     <Testimonials/>
                 </section>
             </main>
