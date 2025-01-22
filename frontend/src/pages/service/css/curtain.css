@@ -68,7 +68,8 @@
   z-index: 100;
   background-color: #fff;
   color: #fff;
-  opacity: 0;
+  display: none;
+  pointer-events: none;
   transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
 }
 .services_row .card.hidden h1 {
