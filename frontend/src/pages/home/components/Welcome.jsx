@@ -1,87 +1,85 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/welcome.css";
-
+import Testimonials from "./Testimonials";
 function WelcomeApp() {
     return (
+        <>
         <div className="welcome-app">
-            <header>
-                <h1>The Details<span>A CSS Cookbook</span></h1>
-            </header>
             <main>
-                <div className="content">
-                    <div className="tiles">
-                        <div style={{ "--r": "45deg" }} className="tile"></div>
-                        <div style={{ "--r": "275deg" }} className="tile"></div>
-                        <div style={{ "--r": "190deg" }} className="tile"></div>
-                        <div style={{ "--r": "45deg" }} className="tile"></div>
+                <div className="content container">
+                    <div className="row" style={{minHeight:'80vh'}}>
+                        <div className="col-md-5"  style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                            <div className="tiles">
+                                <div style={{ "--r": "45deg" }} className="tile"></div>
+                                <div style={{ "--r": "275deg" }} className="tile"></div>
+                                <div style={{ "--r": "190deg" }} className="tile"></div>
+                                <div style={{ "--r": "45deg" }} className="tile"></div>
+                            </div>
+                        </div>
+                        <div className="col-md-7"  style={{display:'flex',alignItems:'center'}}>
+                            <section className="section--one">
+                                <article>
+                                    <div className="title-wrap">
+                                        <h2>Welcome to Asian Adept Events.</h2>
+                                    </div>
+                                    <hr />
+                                    <div className="content-wrap hover-target" style={{zIndex:'12'}}>
+                                        <p>
+                                            Asian Adept is a premier event management company and wedding planner based in Bhubaneswar, Odisha. With services extending to cities like Rourkela, Jharsuguda, Angul, and Talcher, as well as other states across India, we specialize in creating unforgettable events. For over 14 years, we have been delivering top-tier event planning services, ensuring excellence and customer satisfaction. Our motto is simple: "Customer satisfaction is our best achievement."
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div className="title-wrap">
+                                        <h2>Comprehensive Event Management Services</h2>
+                                    </div>
+                                    <hr />
+                                    <div className="content-wrap hover-target" style={{zIndex:'12'}}>
+                                        <p>
+                                            At Asian Adept, we curate and execute a wide range of events tailored to our clients' unique needs. Our services include:
+                                            <li>Wedding Planning & Decoration (including Destination Weddings)</li>
+                                            <li>Private Celebrations (Bachelor Parties, Birthday Parties, Anniversary Parties)</li>
+                                            <li>Corporate Events (Meetings, Conferences, Brand Promotions, Inaugurations)</li>
+                                            <li>Entertainment & Special Events (Musical Parties, Star Nights, Cultural Programs)</li>
+                                            No matter the occasion, we bring creativity, professionalism, and flawless execution to every event.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div className="title-wrap">
+                                        <h2>Commitment to Excellence & Customer Satisfaction.</h2>
+                                    </div>
+                                    <hr />
+                                    <div className="content-wrap hover-target" style={{zIndex:'12'}}>
+                                        <p>
+                                            Asian Adept takes pride in delivering successful events that leave lasting impressions. With a track record of grand and memorable occasions, we ensure that every event we manage is a seamless experience. Our dedication to customer satisfaction, attention to detail, and personalized service makes us the preferred choice for event planning.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div className="title-wrap">
+                                        <h2>Trusted by Clients, Growing Through Excellence.</h2>
+                                    </div>
+                                    <hr />
+                                    <div className="content-wrap hover-target" style={{zIndex:'12'}}>
+                                        <p>
+                                            With years of expertise in wedding and event management, we have earned numerous accolades and positive feedback from our clients. Many of our customers come through word-of-mouth recommendations, as our patrons consider us more than just event planners—they see us as a trusted part of their celebrations. Our growing client base is a testament to our commitment to excellence and the strong relationships we build with every event we organize.
+                                        </p>
+                                    </div>
+                                </article>
+                            </section>
+                        </div>
                     </div>
-                    <section className="section--one">
-                        <article>
-                            <div className="title-wrap">
-                                <h2>Level Up Your CSS.</h2>
-                            </div>
-                            <hr />
-                            <div className="content-wrap">
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                                    vel rem dicta. Aut quidem, sed fugiat officiis inventore
-                                    nostrum. Nam placeat porro, ea distinctio animi eius rerum,
-                                    consequatur vero beatae.
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <div className="title-wrap">
-                                <h2>Dissect Problems.</h2>
-                            </div>
-                            <hr />
-                            <div className="content-wrap">
-                                <p>
-                                    Obcaecati nam doloremque fugiat cum corporis eveniet atque,
-                                    molestias molestiae quaerat nihil sint nostrum cumque itaque
-                                    commodi similique suscipit eos autem saepe velit enim voluptas
-                                    eum quisquam, facilis ipsum. Et!
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <div className="title-wrap">
-                                <h2>Learn New Techniques.</h2>
-                            </div>
-                            <hr />
-                            <div className="content-wrap">
-                                <p>
-                                    Nulla atque voluptatum, a natus, ut illum voluptas incidunt
-                                    ipsam reprehenderit illo perferendis. Possimus dolorem tempora
-                                    minima a mollitia aperiam aliquid voluptatibus fugiat aspernatur
-                                    dignissimos, ullam libero odit molestias eveniet?
-                                </p>
-                            </div>
-                        </article>
-                        <article>
-                            <div className="title-wrap">
-                                <h2>Profit.</h2>
-                            </div>
-                            <hr />
-                            <div className="content-wrap">
-                                <p>
-                                    Similique expedita nihil beatae sunt adipisci deserunt culpa,
-                                    nostrum, amet quis veritatis aperiam, ducimus repellat,
-                                    assumenda atque quia dicta excepturi sint accusantium voluptas
-                                    architecto. Tempore incidunt possimus aspernatur quidem, quasi!
-                                </p>
-                            </div>
-                        </article>
-                    </section>
                 </div>
                 <section className="section--two"></section>
                 <section className="section--three"></section>
                 <section className="section--four"></section>
                 <section className="section--five centered">
-                    <h2>fin.</h2>
+                    <Testimonials/>
                 </section>
             </main>
         </div>
+        </>
     );
 }
 

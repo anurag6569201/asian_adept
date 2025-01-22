@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import { Spheres1Background } from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.5/build/backgrounds/spheres1.cdn.min.js'
 import './pages/home/css/home.css'
-import Cursor from './Cursor'
+import Carousal from './pages/home/components/swiper'
+
 
 const SphereAnimation = () => {
     const canvasRef = useRef(null)
@@ -64,7 +65,6 @@ const SphereAnimation = () => {
 
     return (
         <>
-            <Cursor />
             <div id="app">
                 <div className="hero">
                     <div className="bdy_card_contain">
@@ -73,17 +73,15 @@ const SphereAnimation = () => {
                             <div class="bday-decor--container">
 
                                 <div class="bday-pic ">
-                                    <img src="https://images.unsplash.com/photo-1572451479139-6a308211d8be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80" />
+                                    <Carousal/>
                                 </div>
 
-                                <p class="bday-decor bday-decor--top-right float">🎈</p>
-                                <p class="bday-decor bday-decor--top-left spin">🌼</p>
 
                             </div>
 
                             <div class="bday-message bday-message--paper">
                                 <p>Ana, yet another year that we get to celebrate together! Hope you have a great day, and may your new age be full of health, love and laughter. Love you loads <br /> Camila</p>
-                                <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">a</p>
+                                <p class="bday-decor bday-decor--bottom-right zoom-left-in-out">📌</p>
                             </div>
 
                         </div>

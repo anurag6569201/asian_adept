@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#nav-action{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
 /* Hamburger Menu Icon */
 .bars {
     position: absolute;

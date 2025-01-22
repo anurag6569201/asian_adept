@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Background with Scrolling Foreground</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background Page (Fixed) */
+        #page1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+            z-index: 1;
+        }
+
+        /* Scrolling Page (Foreground) */
+        #page2 {
+            position: relative;
+            z-index: 2;
+            background: white;
+            padding: 20px;
+            margin-top: 100vh; /* Push it down so it starts below the background */
+            min-height: 200vh; /* Make it tall to allow scrolling */
+        }
+
+        h1, p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="page1">
+        <h1 style="color: white; text-shadow: 2px 2px 10px black;">Page 1 (Background - Fixed)</h1>
+    </div>
+
+    <div id="page2">
+        <h1>Page 2 (Scrollable)</h1>
+        <p>Keep scrolling to see how Page 1 stays in the background.</p>
+        <p>More content...</p>
+        <p style="height: 150vh;">Keep scrolling...</p>
+    </div>
+
+</body>
+</html>
