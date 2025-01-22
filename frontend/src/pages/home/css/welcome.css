@@ -123,7 +123,7 @@ hr {
 .tile:nth-of-type(4)::after {
 	opacity: 1;
 }
-.content {
+.welcome-app .content {
 	min-height: 100vh;
 	gap: 4rem;
 	position: sticky;

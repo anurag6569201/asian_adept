@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/navbar.css';
-import Cursor from '../../../Cursor'
+import Cursor from '../../../Cursor';
 import TopLinks from './TopLinks';
 
 function Navbar() {
@@ -17,7 +18,6 @@ function Navbar() {
             bars.addEventListener("click", barClicked);
         }
 
-        // Cleanup function to remove event listener when component unmounts
         return () => {
             if (bars) {
                 bars.removeEventListener("click", barClicked);
@@ -25,27 +25,37 @@ function Navbar() {
         };
     }, []);
 
+    // ✅ Move `hideNav` outside useEffect so JSX can use it
+    function hideNav() {
+        const bars = document.getElementById("nav-action");
+        const nav = document.getElementById("nav");
+
+        if (bars && nav) {
+            bars.classList.remove('active');
+            nav.classList.remove('visible');
+        }
+    }
+
     return (
         <>
             <Cursor />
             <TopLinks />
-            <div class="bars" id="nav-action">
-                <span class="bar"></span>
+            <div className="bars" id="nav-action">
+                <span className="bar"></span>
             </div>
 
             <nav id="nav">
                 <ul>
-                    <li class="shape-circle"><a className='hover-target' href="#">Home</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">About</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Services</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Portfolio</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Blog</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Team</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Contact</a></li>
-                    <li class="shape-circle"><a className='hover-target' href="#">Careers</a></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/about" onClick={hideNav}>About</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/services" onClick={hideNav}>Services</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/portfolio" onClick={hideNav}>Portfolio</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/blog" onClick={hideNav}>Blog</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/team" onClick={hideNav}>Team</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/contact" onClick={hideNav}>Contact</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/service" onClick={hideNav}>Service</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/" onClick={hideNav}>Home</Link></li>
                 </ul>
             </nav>
-
         </>
     );
 }

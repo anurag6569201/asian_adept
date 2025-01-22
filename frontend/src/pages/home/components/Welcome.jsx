@@ -1,12 +1,11 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/welcome.css";
-
-import welcome1 from '../images/welcome1.svg';
+import SphereAnimation from '../../../SphereAnimation';
 
 import Testimonials from "./Testimonials";
 function WelcomeApp() {
     return (
         <>
+        <SphereAnimation/>
         <div className="welcome-app">
             <main>
                 <div className="content container">

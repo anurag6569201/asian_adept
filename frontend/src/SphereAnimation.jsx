@@ -17,7 +17,7 @@ const SphereAnimation = () => {
             count: 150,
             minSize: 0.3,
             maxSize: 0.8,
-            gravity: 0.4
+            gravity: 0
         });
 
         const bg = bgRef.current;
