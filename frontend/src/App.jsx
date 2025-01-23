@@ -7,6 +7,7 @@ import WelcomeApp from './pages/home/components/Welcome';
 
 
 import Service from './pages/service/components/Service';
+import Team from './pages/team/components/Team';
 function App() {
   return (
     <Router>
@@ -15,11 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<WelcomeApp />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/about" element={<h1>About Page</h1>} />
+        <Route path="/team" element={<Team/>} />
         <Route path="/services" element={<h1>Services Page</h1>} />
         <Route path="/portfolio" element={<h1>Portfolio Page</h1>} />
         <Route path="/blog" element={<h1>Blog Page</h1>} />
-        <Route path="/team" element={<h1>Team Page</h1>} />
+        <Route path="/about" element={<h1>about Page</h1>} />
         <Route path="/contact" element={<h1>Contact Page</h1>} />
       </Routes>
       <Footer />

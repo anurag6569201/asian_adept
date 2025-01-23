@@ -50,8 +50,8 @@ function Navbar() {
                     <li className="shape-circle"><Link className='hover-target' to="/services" onClick={hideNav}>Services</Link></li>
                     <li className="shape-circle"><Link className='hover-target' to="/portfolio" onClick={hideNav}>Portfolio</Link></li>
                     <li className="shape-circle"><Link className='hover-target' to="/blog" onClick={hideNav}>Blog</Link></li>
-                    <li className="shape-circle"><Link className='hover-target' to="/team" onClick={hideNav}>Team</Link></li>
                     <li className="shape-circle"><Link className='hover-target' to="/contact" onClick={hideNav}>Contact</Link></li>
+                    <li className="shape-circle"><Link className='hover-target' to="/team" onClick={hideNav}>Team</Link></li>
                     <li className="shape-circle"><Link className='hover-target' to="/service" onClick={hideNav}>Service</Link></li>
                     <li className="shape-circle"><Link className='hover-target' to="/" onClick={hideNav}>Home</Link></li>
                 </ul>

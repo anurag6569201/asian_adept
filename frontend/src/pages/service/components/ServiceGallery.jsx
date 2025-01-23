@@ -1,16 +1,14 @@
+import React from 'react';
 import '../css/servicegallery.css';
 
-function ServiceGalleryy() {
+function ServiceGallery(props) {
     return (
-        <div class="gallery">
-        <img src="https://picsum.photos/id/1028/300/300" alt="Forest"/>
-        <img src="https://picsum.photos/id/15/300/300" alt="Waterfall"/>
-        <img src="https://picsum.photos/id/1040/300/300" alt="Mountain"/>
-        <img src="https://picsum.photos/id/1040/300/300" alt="Mountain"/>
-        <img src="https://picsum.photos/id/1040/300/300" alt="Mountain"/>
-        <img src="https://picsum.photos/id/1040/300/300" alt="Mountain"/>
-    </div>
+        <div className="gallery">
+            {props.images.map((image, index) => (
+            <img src={image} alt={`gallery-item-${index}`} />
+            ))}
+        </div>
     );
 }
 
-export default ServiceGalleryy;
+export default ServiceGallery;

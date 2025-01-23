@@ -159,4 +159,11 @@
 .content .service_svg_main{
     font-size: 3rem;
 }
-
+.cards-container h2,
+.cards-container h1{
+    font-weight: 700;
+    font-family: "Permanent Marker", serif;
+}
+.cta-button{
+    width:fit-content !important;
+}

@@ -95,7 +95,6 @@ const SphereAnimation = () => {
                         </h2>
                         <p>From weddings to corporate gatherings, Asian Adept crafts flawless events with creativity and precision. Let’s make your vision a reality!</p>
                         <button id="gravity-btn" className="hover-target" style={{ zIndex: '100' }}>Book Meeting</button>
-                        <button id="colors-btn" className="hover-target" style={{ zIndex: '100', marginLeft: '10px',position:'sticky' }}>Change Colors</button>
                     </div>
                 </div>
                 <canvas ref={canvasRef} id="webgl-canvas"></canvas>
